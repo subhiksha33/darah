@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:text="You can recieve blood from:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="151dp"
+        android:text="Select a blood group to view the list of donors"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/aneg"		
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="17dp"
+        android:text="A-" />
+
+    <Button
+        android:id="@+id/bneg"		
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/aneg"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/aneg"
+        android:text="B-" />
+
+    <Button
+        android:id="@+id/abneg"		
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aneg"
+        android:layout_below="@+id/aneg"
+        android:layout_marginTop="20dp"
+        android:text="AB-" />
+
+    <Button
+        android:id="@+id/oneg"		
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bneg"
+        android:layout_alignTop="@+id/abneg"
+        android:text="O-" />
+
+</RelativeLayout>

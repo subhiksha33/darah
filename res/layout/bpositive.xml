@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="You can recieve blood from:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/bpos"  
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:text="B+"
+        app:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/bneg"   
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bpos"
+        android:layout_alignBottom="@+id/bpos"
+        android:layout_marginLeft="39dp"
+        android:layout_toRightOf="@+id/bpos"
+        android:text="B-"
+        app:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/opos"   
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bpos"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/bneg"
+        android:text="O+" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/opos"
+        android:layout_marginTop="56dp"
+        android:text="Select a blood group to view the list of donors"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/oneg"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/bneg"
+        android:text="O-" />
+
+</RelativeLayout>

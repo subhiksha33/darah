@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:text="Select the person&apos;s Blood Group you are searching for:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/a_positive"           
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="57dp"
+        android:text="A+"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/a_negative"             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/a_positive"
+        android:layout_alignBottom="@+id/a_positive"
+        android:layout_marginLeft="52dp"
+        android:layout_toRightOf="@+id/a_positive"
+        android:text="A-"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_positive"                
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/a_positive"
+        android:layout_below="@+id/a_positive"
+        android:layout_marginTop="16dp"
+        android:text="B+"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/b_negative"                  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b_positive"
+        android:layout_alignBottom="@+id/b_positive"
+        android:layout_alignLeft="@+id/a_negative"
+        android:text="B-"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/ab_positive"               
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/b_positive"
+        android:layout_below="@+id/b_positive"
+        android:layout_marginTop="18dp"
+        android:text="AB+"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/ab_negative"             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ab_positive"
+        android:layout_alignBottom="@+id/ab_positive"
+        android:layout_alignRight="@+id/b_negative"
+        android:text="AB-"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/o_negative"             
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/o_positive"
+        android:layout_alignLeft="@+id/ab_negative"
+        android:text="O-"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/o_positive"            
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ab_positive"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/a_negative"
+        android:text="O+"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

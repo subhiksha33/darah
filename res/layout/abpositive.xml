@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="You can recieve blood from:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/oneg"  
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/opos"
+        android:layout_alignLeft="@+id/abneg"
+        android:text="O-" />
+
+    <Button
+        android:id="@+id/apos" 
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:text="A+" />
+
+    <Button
+        android:id="@+id/bpos" 
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/apos"
+        android:layout_below="@+id/apos"
+        android:layout_marginTop="17dp"
+        android:text="B+" />
+
+    <Button
+        android:id="@+id/aneg"  
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bpos"
+        android:layout_centerHorizontal="true"
+        android:text="A-" />
+
+    <Button
+        android:id="@+id/bneg"   
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bpos"
+        android:layout_alignBottom="@+id/bpos"
+        android:layout_alignLeft="@+id/aneg"
+        android:text="B-" />
+
+    <Button
+        android:id="@+id/abneg"	
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bneg"
+        android:layout_below="@+id/bneg"
+        android:layout_marginTop="14dp"
+        android:text="AB-" />
+
+    <Button
+        android:id="@+id/abpos"	
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/abneg"
+        android:layout_alignBottom="@+id/abneg"
+        android:layout_alignLeft="@+id/bpos"
+        android:text="AB+" />
+
+    <Button
+        android:id="@+id/opos"	
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/abpos"
+        android:layout_below="@+id/abpos"
+        android:layout_marginTop="15dp"
+        android:text="O+" />
+
+    <TextView
+        android:id="@+id/textView2"		
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/oneg"
+        android:layout_marginTop="49dp"
+        android:text="Select a blood group to view the list of donors"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+</RelativeLayout>

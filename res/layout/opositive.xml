@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="You can recieve blood from:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/opos"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="54dp"
+        android:text="O+" />
+
+    <Button
+        android:id="@+id/oneg"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/opos"
+        android:layout_alignBottom="@+id/opos"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/opos"
+        android:text="O-" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Select a blood group to view the list of donors"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:ignore="HardcodedText" />
+
+</RelativeLayout>
