@@ -1,39 +1,204 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="446dp"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity"
-    tools:ignore="UnknownIdInLayout,HardcodedText" >
+    tools:context="com.example.kite.MainActivity$PlaceholderFragment" >
 
-    <Button
-        android:id="@+id/banks"
+    <TextView
+        android:id="@+id/dob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="77dp"
-        android:text="Nearest Blood Banks" />
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="22dp"
+        android:text="Dob"
+        tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/donate"
+    <TextView
+        android:id="@+id/gen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/banks"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="26dp"
-        android:text="Donate Blood" />
+        android:layout_alignLeft="@+id/dob"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="21dp"
+        android:text="Gender"
+        tools:ignore="HardcodedText" />
 
-    <Button
-        android:id="@+id/search"
+    <EditText
+        android:id="@+id/edob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/donate"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:text="Search For Blood" />
+        android:layout_alignBaseline="@+id/dob"
+        android:layout_alignBottom="@+id/dob"
+        android:layout_alignLeft="@+id/ename"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edob"
+        android:layout_alignTop="@+id/gen"
+        android:layout_marginLeft="14dp" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/group"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/radioGroup1"
+        android:entries="@array/group_arr" />
+
+    
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/name"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="25dp"
+        android:text="Address"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/editText2"
+        android:text="Phone num"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add"
+        android:layout_below="@+id/eadd"
+        android:layout_marginTop="24dp"
+        android:text="EmailId"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/eemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_toRightOf="@+id/gen"
+        android:ems="10"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/eadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add"
+        android:layout_alignBottom="@+id/add"
+        android:layout_alignLeft="@+id/editText2"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/num"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="30dp"
+        android:text="Name"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/ename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignRight="@+id/group"
+        android:ems="10"
+        tools:ignore="TextFields" />
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/group"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:text="Female"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/group"
+        android:layout_alignLeft="@+id/add"
+        android:layout_marginBottom="14dp"
+        android:text="Blood Group"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/num"
+        android:layout_alignBottom="@+id/num"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/ok"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eemail"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/email"
+        android:text="Ok"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/cl"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ok"
+        android:layout_alignBottom="@+id/ok"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:text="Cancel"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>
+
+</ScrollView>
+
+
