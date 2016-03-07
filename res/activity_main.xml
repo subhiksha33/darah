@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:text="Select the box(es) if any of the conditions is/are true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/but1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="21dp"
+        android:text="Had a tattoo, ear or skin piercing or acupuncture in last 6 months"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/but2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/but1"
+        android:layout_below="@+id/but1"
+        android:layout_marginTop="20dp"
+        android:text="Recieved Blood or Blood Products in last 6 months"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/but3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/but2"
+        android:layout_below="@+id/but2"
+        android:layout_marginTop="14dp"
+        android:text="Donated Blood &lt; 3 months"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/but4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/but3"
+        android:layout_below="@+id/but3"
+        android:layout_marginTop="14dp"
+        android:text="Taken alchoholic beverages in last 24 hours"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/but5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/but4"
+        android:layout_below="@+id/but4"
+        android:layout_marginTop="16dp"
+        android:text="Had dental work or taken Asprin in last 72 hours"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/but3"
+        android:text="Additional Information"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:entries="@array/notification" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but5"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
